@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - FitZone Fitness Center</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="FitZone Fitness Center Logo" style="height: 75px; vertical-align: middle;">
+              </a>
+              
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="btn">Login</a></li>
+                <li><a href="Register.html" class="btn">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-hero">
+          <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Please fill out the form below.</p>
+    </section>
+
+    <section class="contact-info">
+        <h2>Get in Touch</h2>
+        <p><strong>Address:</strong> 123 FitZone Lane, Kurunagala, Sri Lanka</p>
+        <p><strong>Phone:</strong> +94 123 456 789</p>
+        <p><strong>Email:</strong> info@fitzone.com</p>
+    </section>
+
+    <section class="contact-form">
+        <h2>Contact Form</h2>
+        <form action="process_contact.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="cta">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 FitZone Fitness Center. All Rights Reserved.</p>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook" style="height: 50px; margin: 0 10px;">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="instagram-icon.jpg" alt="Instagram" style="height: 50px; margin: 0 10px;">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

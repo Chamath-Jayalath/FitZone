@@ -1,0 +1,90 @@
+<html>
+<head>
+  
+    <title>FitZone Fitness Center</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="FitZone Fitness Center Logo" style="height: 75px; vertical-align: middle;">
+              </a>
+              
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="btn">Login</a></li>
+                <li><a href="Register.html" class="btn">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <video autoplay loop muted class="background-video">
+                <source src="background-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="content">
+                <h1>Achieve Your Fitness Goals with FitZone</h1>
+                <p>Join today and get access to top trainers and state-of-the-art equipment.</p>
+                <a href="membership.html" class="cta">Join Now</a>
+            </div>
+        </section>
+    
+        <section class="features">
+            <div class="feature">
+                <img src="Strength Training.webp" alt="Strength Training" class="feature-image"> 
+                <h2>Strength Training</h2>
+                <p>Enhance your muscle growth with expert guidance.</p>
+            </div>
+            <div class="feature">
+                <img src="Yoga & Wellness.webp" alt="Yoga & Wellness" class="feature-image">
+                <h2>Yoga & Wellness</h2>
+                <p>Find your inner peace with guided yoga sessions.</p>
+            </div>
+            <div class="feature">
+                <img src="cardio-programs.jpg" alt="Cardio Programs" class="feature-image"> 
+                <h2>Cardio Programs</h2>
+                <p>Boost your stamina with customized workout plans.</p>
+            </div>
+        </section>
+        <section class="bmi-calculator">
+            <h2>BMI Calculator</h2>
+            <p>Enter your weight and height to calculate your Body Mass Index (BMI).</p>
+            <div class="bmi-form">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" placeholder="Enter weight" required>
+                
+                <label for="height">Height (m):</label>
+                <input type="number" id="height" placeholder="Enter height" step="0.01" required>
+                
+                <button onclick="calculateBMI()">Calculate BMI</button>
+                
+                <p id="bmi-result"></p>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 FitZone Fitness Center. All Rights Reserved.</p>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook" style="height: 50px; margin: 0 10px;">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="instagram-icon.jpg" alt="Instagram" style="height: 50px; margin: 0 10px;">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
